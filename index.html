@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raul Scapin</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header class="topo container">
+        <div class="conteudo_topo ">
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="#skills">Competências</a> </li>
+                    <li><a href="#projetos">Projetos</a> </li>
+                    <li><a href="#contato">Contatos</a> </li>
+                </ul>
+            </nav>
+            <span id="btn_menu" class="botao_menu" >M</span>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+          $(function() {
+            var nav = $('.menu');
+            var botao = $('.botao_menu');
+            botao.on('click',function(){
+               
+                 nav.toggleClass("active");
+            });
+            });
+        </script>
+    </header>
+
+    <main class="conteudo_geral">
+        <section id="nome">
+            <div class="flex-grupo"></div>
+            <img src="IMG/1.jpg" alt="Foto do Raul">
+            <div>
+
+                <h1>Raul Scapin</h1>
+                <h2>Desenvolvedor Web Front-end</h2>
+                <br>
+
+                <p>
+                    Raul Scapin é um jovem nascido em Santo André, atua na área de desenvolvimento de sistemas a 2 meses e atualmente está cursando o ensino técnico de desenvolvimento de sistemas no SENAI de informática da Santa Cecília 
+                </p>
+            </div>
+
+        </section>
+
+    <section id="skills">
+        <h2>Competências e Skills</h2>
+        <br>    
+        <div class="box">
+            <img src="IMG/3.jpg" alt="HTML e CSS">
+            <p>Especialização em Front-end trazendo a melhor eficácia e otimização para o seu site!</p>
+
+        </div>
+
+        <div class="box">
+                <img src="IMG/4.png" alt="UX">
+                <p>Conhecimento e aplicação dos príncipios dos UX (Experiência do usuário) para uso confortável de seus usuários!</p>
+    
+        </div>
+
+        <div class="box">
+                <img src="IMG/5.jpg" alt="Imagem ilustrativa mostrando o Desktop, Tablets, Celulares e notebooks">
+                <p>Criação de sites responsivos para qualquer dispositivos, incluindo desktop, tablets e celulares!</p>
+    
+        </div>
+
+        <div class="box">
+                    <img src="IMG/6.jpg" alt="Imagem mostrando HTML, C#, CSS3, JS e outras Competências do Raul">
+                    <p>Conhecimento de Photoshop, HTML's, CSS 3, C#, Cloud, SQL, React, React native e outros!</p>
+        </div>
+
+    </section>
+    
+    <section id="projetos">
+        <h2>Projetos Desenvolvidos</h2>
+        <div class="boxes">
+
+            <div class="caixa">
+                <img src="IMG/7.png" alt="Layout de uma hamburgueria">
+                <p> <strong> hamburgueria Mc Bonalds , desenvolvimento do HTML e CSS</strong>
+                </p>
+            </div>
+            
+            <div class="caixa">
+                <img src="IMG/8.png" alt="Layout de uma hamburgueria">
+                <p> <strong> Réplica do cadastro do Instagram, desenvolvimento do HTML e CSS </strong>
+                </p>
+            </div>
+            
+            <div class="caixa">
+                <img src="IMG/9.png" alt="Layout de uma hamburgueria">
+                <p> <strong>  Ponto Digital , desenvolvimento do Design </strong>
+                </p>
+            </div>
+            
+            <div class="caixa">
+                <img src="IMG/10.png" alt="Layout de uma hamburgueria">
+                <p> <strong> e aplicação do formulários desenvolvimento do Design, HTML, e CSS</strong>
+                </p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>CONTATOS</h2>
+        <br>
+        <strong>
+
+            <p>Restou alguma dúvida ou pretende fazer um orçamento?</p> 
+            <p>Entre em contato por telefone, email, alguma de nossas redes sociais ou mensagem direta! </p>
+            <br>
+               <p> Telefone: 11 1234-4321 </p>
+               <br>
+               <p>E-mail: raul.scapin19@gmail.com</p>
+                
+            </strong>
+        <br>
+        
+        <div class="social">
+        <h3>Redes Sociais</h3>  
+            <a href="https://www.facebook.com/"><img src="IMG/11.png" width="50" height="50" title="Facebook" alt="Facebook"></a>
+            <a href="https://www.instagram.com/"><img src="IMG/12.png" width="50" height="50" title="Instagram" alt="Instagram"></a>
+            <br>
+            
+        </div>
+        <br>
+        <div class="direta">
+
+            <h3>Mensagem direta</h3>
+        </div>
+
+        <section class="formulario">
+            <form action="" method="POST">
+                <label for="nome">Nome:</label>
+
+                <input type="text" name="nome" maxlength="50" required>
+
+                <label for="email">E-mail:</label>
+
+                <input type="email" name="email" maxlength="30" required>
+        
+                <div class="assunto">
+
+                    <label for="text"> Assunto:</label>
+                    
+                    <input type="text" name="assunto" required>
+                </div>
+
+                <br>
+                <div class="texto">
+
+                    <label for="text">Mensagem:</label>
+                    <input type="text" name="mensagem" required>
+                    
+                </div>
+
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+
+        </section>
+
+    </section>
+
+    </main>
+    
+    <footer>
+        <strong>
+        <h2>Raul Scapin</h2>
+        <br>
+        <p>
+            Desenvolvedor Web Front-end
+            <br>
+            tel: 11 1234-4321
+            <br>
+            2019
+        </strong>
+        </p>
+        <a href="#">Voltar ao topo</a>
+    </footer>
+     
+</body>
+</html>
